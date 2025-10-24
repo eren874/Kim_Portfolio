@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">KIM</a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                
+                <div class="hamburger" id="hamburger-menu" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section home">
+            <div class="container home-content">
+                <div class="home-text">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p class="intro-text">
+                        Hi! I’m <span class="typing-text" id="typing-text"></span>
+                    </p>
+                    <p>This page represents who I am, what I do, and what inspires me.</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1AF2NmZg8X/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/soriokim2-max" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                      
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container about-container fade-in">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="A professional photo of [Your Name]" width="300" height="300" class="profile-pic">
+                </div>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate web developer and designer with a love for creating clean, intuitive, and dynamic user experiences. I thrive on turning complex problems into beautiful, simple solutions.</p>
+                    <h3>My Interests</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-code"></i> Clean Coding</li>
+                        <li><i class="fa-solid fa-camera"></i> Photography</li>
+                        <li><i class="fa-solid fa-gamepad"></i> Gaming & VR</li>
+                        <li><i class="fa-solid fa-plane"></i> Traveling</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container fade-in">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <p>Have a question or want to work together? Feel free to reach out!</p>
+                        <a href="https://www.w3schools.com/" target="_blank" class="btn-link large">
+                            Visit My Favorite Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 KIM KHENNETE SORIO .All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
